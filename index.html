@@ -42,6 +42,29 @@
             <p>With over 30 years of mechanical experience, Bobby 'Porky' Underwood has worked on everything from daily drivers to heavy-duty trucks to farming equipment and more. Specializing in automotive and diesel repair, he founded Porky's Portable Pitstop to make car repairs more convenient for you.</p>
             <p>Whether you're stuck on the side of the road or just need an oil change while you're at work, we bring the garage to you. Our mission is to provide reliable, efficient, and honest mobile mechanic services—because car trouble shouldn't mean rearranging your whole day.</p>
         </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Questions? Comments? Ready to book a service? We're here to help! Drop us a line or give us a call and we'll be in touch shortly!</p>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+                <label for="reason">Reason for Contact</label>
+                <select id="reason" name="reason">
+                    <option value="schedule">Schedule an appointment</option>
+                    <option value="roadside">Request emergency roadside assistance</option>
+                    <option value="questions">General questions</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="other">Other</option>
+                </select>
+                <label for="info">Additional Information</label>
+                <textarea id="info" name="info"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
     </main>    
 </body>
 </html>
