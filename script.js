@@ -8,3 +8,16 @@ function generateTip() {
 }
 window.onload = generateTip;
 document.getElementById("newTipBtn").addEventListener("click", generateTip);
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+  const phone = document.getElementById("phone").value;
+  const email = document.getElementById("email").value;
+  const reason = document.getElementById("reason").value;
+  if (!phone && !email) {
+    alert("Please provide either a phone number or an email address.");
+    event.preventDefault();
+  }
+  if (reason === "") {
+    alert("Please select a reason for contact.");
+    event.preventDefault();
+  }
+});
