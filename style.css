@@ -72,8 +72,8 @@ section {
     text-align: center;
     padding: 2rem 0;
 }
-#hero img, #hero p, {
-    margin: 4rem;
+#hero img, #hero p {
+    margin-bottom: 2rem;
   }
 form {
     display: flex;
